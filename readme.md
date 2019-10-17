@@ -11,6 +11,17 @@ Visit [SoundTouch website](https://www.surina.net/soundtouch) and see the [READM
 
 ### The latest stable release is 2.1.2
 
+## Get started
+
+add this in your CMakeLists.txt
+```
+set (SOUNDTOUCH_DIR ***PATH TO OBOE***)
+
+add_subdirectory(${SOUNDTOUCH_DIR} ./soundtouch)
+
+include_directories(${SOUNDTOUCH_DIR}/include)
+```
+
 ## Example
 
 Use SoundStretch example app for modifying wav audio files, for example as follows:
